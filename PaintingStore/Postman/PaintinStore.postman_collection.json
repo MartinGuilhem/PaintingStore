@@ -1,0 +1,372 @@
+{
+	"info": {
+		"_postman_id": "73fc86f9-61a5-48e1-9b8d-3acc633aa2f3",
+		"name": "PaintinStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all paintings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/paintings",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paintings"
+					]
+				},
+				"description": "Get all paintings"
+			},
+			"response": []
+		},
+		{
+			"name": "Create painting",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillero\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 777.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stores/2/painting",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stores",
+						"2",
+						"painting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete painting",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillera\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 777.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/paintings/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paintings",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get paintings from store",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillero\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 777.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/store/2/paintings",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"store",
+						"2",
+						"paintings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get painting by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillero\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 777.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/paintings/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paintings",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update painting",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillero\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 1111.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/paintings/12",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"paintings",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete all paintings from store",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillero\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 1111.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/burn/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"burn",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all stores",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Tormenta en el astillero\",\r\n    \"author\": \"Benito Quinquela Martín\",\r\n    \"price\": 1111.0   \r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stores",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"White Collar Argentina\",\r\n        \"capacity\": 23\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stores",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get store by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"name\": \"White Collar Argentina\",\r\n        \"capacity\": 23\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stores/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stores",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update store",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 4,\r\n        \"name\": \"White Collar Buenos Aires\",\r\n        \"capacity\": 27\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stores/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stores",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete store",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 4,\r\n        \"name\": \"White Collar Buenos Aires\",\r\n        \"capacity\": 27\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/api/stores/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"stores",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
